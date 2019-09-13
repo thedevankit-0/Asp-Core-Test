@@ -1,0 +1,97 @@
+﻿@model Asp_Core_Test.Models.Student
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* Shows the details of selected student with QR Code *@
+
+<ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a asp-action="Index">Home</a></li>
+    <li class="breadcrumb-item active">Student Card</li>
+</ol>
+
+<div class="card border-primary">
+    <div class="col-md-12 card-body">
+        <div class="form-horizontal">
+            <h3 class="text-center font-weight-bold text-primary my-2">Student Card</h3>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="~/images/qrcode.png" alt="QRCode" height="300" width="300" />
+                </div>
+                <div class="col-md-8 my-4">
+                    <dl class="row">
+                        <dt class="col-sm-4">
+                            First Name
+                        </dt>
+                        <dd class="col-sm-8 text-capitalize">
+                            @Html.DisplayFor(model => model.FirstName)
+                        </dd>
+                        <dt class="col-sm-4">
+                            Last Name
+                        </dt>
+                        <dd class="col-sm-8 text-capitalize">
+                            @Html.DisplayFor(model => model.LastName)
+                        </dd>
+                        <dt class="col-sm-4">
+                            Email
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+                        <dt class="col-sm-4">
+                            Address
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Address)
+                        </dd>
+                        <dt class="col-sm-4">
+                            Contact
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Contact)
+                        </dd>
+                        @if (Model.Gender == "m")
+                        {
+                            <dt class="col-sm-4">
+                                Gender
+                            </dt>
+                            <dd class="col-sm-8">
+                                Male
+                            </dd>
+                        }
+                        else
+                        {
+                            <dt class="col-sm-4">
+                                Gender
+                            </dt>
+                            <dd class="col-sm-8">
+                                Female
+                            </dd>
+                        }
+                        <dt class="col-sm-4">
+                            Education Year
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Year)
+                        </dd>
+                        <dt class="col-sm-4">
+                            Phd Subject
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.phdSubject.Name)
+                        </dd>
+                    </dl>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center col-md-6 offset-3">
+                    <a asp-controller="Student" asp-action="ExportToPDF" asp-route-id="@Model.Id" class="btn btn-block float-right btn-primary">Download Pdf</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<a asp-controller="Student" asp-action="" class="btn btn-sm float-right btn-primary"></a>*@
+@*window.open('/{ControllerName}/GetReport, "_blank");*@

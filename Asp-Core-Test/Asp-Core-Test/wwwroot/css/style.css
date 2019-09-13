@@ -1,0 +1,19 @@
+﻿.nav-brand-img {
+    height: 30px;
+    width: 50px;
+}
+
+.add-img {
+    height: 240px;
+}
+
+.img-user {
+    height: 45%;
+    width: 80%;
+    padding: 10px;
+}
+
+.delete-img {
+    height: 150px;
+    width: 150px;
+}

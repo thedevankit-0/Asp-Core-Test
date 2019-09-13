@@ -1,0 +1,86 @@
+﻿@model Asp_Core_Test.Models.PhdSubject
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* Confirms the subject to be deleted *@
+<ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a asp-controller="Student" asp-action="Index">Home</a></li>
+    <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-item">Subject</a></li>
+    <li class="breadcrumb-item active">Delete Subject Details</li>
+</ol>
+
+<div class="card border-danger">
+    <div class="col-md-6 card-body offset-3">
+        <div class="form-horizontal">
+            <div class="text-center">
+                <img src="~/images/delete.png" class="delete-img" />
+            </div>
+            <h3 class="text-center font-weight-bold text-danger my-4">Please Confirm Delete</h3>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-4">
+                    Subject
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class="col-sm-4">
+                    Description
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+
+            <button type="button" class="btn btn-sm btn-danger float-right" data-toggle="modal" data-target="#add-contact">
+                Delete
+            </button>
+            <a asp-action="Index" class="btn btn-sm btn-warning float-left">Go Back</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="add-contact" tabindex="-1" role="dialog" aria-labelledby="addContactLabel" aria-hidden="true">
+    <div class="modal-dialog  border-success" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addContactLabel">Delete confirm</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center font-weight-bold text-danger my-4">Are You Sure You Want to Delete ?</h3>
+                <h6 class="text-danger font-weight-bold">This action will delete data of all the students who are applied to this subject.</h6>
+
+                <dl class="row">
+                    <dt class="col-sm-4">
+                        Subject
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+                    <dt class="col-sm-4">
+                        Description
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="Delete" class="btn btn-danger float-right" />
+                </form>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

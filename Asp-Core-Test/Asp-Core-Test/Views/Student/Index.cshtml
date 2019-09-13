@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Asp_Core_Test.Models.Student>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* Listing the All Students from Student table *@
+<div class="row my-3">
+    <img class="add-img img-responsive rounded mx-auto" src="~/images/add-student.jpg" alt="Movie Icon" />
+</div>
+<div class="row my-2">
+    <div class="col-8 offset-2">
+        <a asp-controller="Student" asp-action="Save" class="btn btn-block btn-primary">Add Student Details</a>
+    </div>
+</div>
+
+@if (Model.Count() == 0)
+{
+    <div class="card border-danger my-5">
+        <div class="col-md-6 card-body offset-3">
+            <div class="form-horizontal">
+                <div class="text-center">
+                    <img src="~/images/not-found.png" class="delete-img" />
+                </div>
+                <h3 class="text-center font-weight-bold text-danger my-4">No records to show. Please add record.</h3>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row justify-content-md-center my-3">
+        @foreach (var item in Model)
+        {
+            <div class="card col-md-3 my-2 mx-2 offset-1">
+                @if (item.Gender == "f")
+                {
+                    <img class="mx-auto card-img-top img-user" src="~/images/manager.png" alt="Movie Icon" />
+                }
+                else
+                {
+                    <img class="mx-auto card-img-top img-user" src="~/images/businessman.png" alt="Movie Icon" />
+                }
+                <div class="card-body">
+                    <h4 class="card-title text-capitalize text-center font-weight-bold text-danger">
+                        @Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)
+                    </h4>
+                    <p class="card-text">
+                        <dl class="row">
+                            <dt class="col-md-4">Year</dt>
+                            <dd class="col-md-8"> @Html.DisplayFor(modelItem => item.Year)</dd>
+                            <dt class="col-md-4">Email</dt>
+                            <dd class="col-md-8"> @Html.DisplayFor(modelItem => item.Email)</dd>
+                            <dt class="col-md-4">Subject</dt>
+                            <dd class="col-md-8"> @Html.DisplayFor(modelItem => item.phdSubject.Name)</dd>
+                            <dt class="col-md-4">Address</dt>
+                            <dd class="col-md-8"> @Html.DisplayFor(modelItem => item.Address)</dd>
+                        </dl>
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-controller="Student" asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary">View Details</a>
+                    <a asp-controller="Student" asp-action="Save" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                </div>
+            </div>
+        }
+    </div>
+}

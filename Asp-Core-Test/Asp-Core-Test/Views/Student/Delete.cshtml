@@ -1,0 +1,91 @@
+﻿@model Asp_Core_Test.Models.Student
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@* Confirms the delete for the student record *@
+<ol class="breadcrumb my-4">
+    <li class="breadcrumb-item">
+        <a asp-action="Index">Home</a>
+    </li>
+    <li class="breadcrumb-item active">Delete Student Details</li>
+</ol>
+
+<div class="card border-danger">
+    <div class="col-md-6 card-body offset-3">
+        <div class="form-horizontal">
+            <div class="text-center">
+                <img src="~/images/delete-user-icon-png.png" class="delete-img" />
+            </div>
+            <h3 class="text-center font-weight-bold text-danger my-2">Delete Student Detail</h3>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-4">
+                    First Name
+                </dt>
+                <dd class="col-sm-8 text-capitalize">
+                    @Html.DisplayFor(model => model.FirstName)
+                </dd>
+                <dt class="col-sm-4">
+                    Last Name
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.LastName)
+                </dd>
+                <dt class="col-sm-4">
+                    Email
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt class="col-sm-4">
+                    Address
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+                <dt class="col-sm-4">
+                    Contact
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Contact)
+                </dd>
+                @if (Model.Gender == "m")
+                {
+                    <dt class="col-sm-4">
+                        Gender
+                    </dt>
+                    <dd class="col-sm-8">
+                        Male
+                    </dd>
+                }
+                else
+                {
+                    <dt class="col-sm-4">
+                        Gender
+                    </dt>
+                    <dd class="col-sm-8">
+                        Female
+                    </dd>
+                }
+
+                <dt class="col-sm-4">
+                    Education Year
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Year)
+                </dd>
+                <dt class="col-sm-4">
+                    Phd Subject
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.phdSubject.Name)
+                </dd>
+            </dl>
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Delete" class="btn btn-sm btn-danger float-right" />
+                <a asp-action="Index" class="btn btn-sm btn-warning float-left">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>

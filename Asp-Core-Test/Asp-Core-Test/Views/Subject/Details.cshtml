@@ -1,0 +1,39 @@
+﻿@model Asp_Core_Test.Models.PhdSubject
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* Shows the details of particular subject *@
+<ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a asp-controller="Student" asp-action="Index">Home</a></li>
+    <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-item">Subject</a></li>
+    <li class="breadcrumb-item active">Student Details</li>
+</ol>
+
+<div class="card border-primary">
+    <div class="col-md-6 card-body offset-3">
+        <div class="form-horizontal">
+            <div class="text-center">
+                <img src="~/images/view.png" class="delete-img" />
+            </div>
+            <h3 class="text-center font-weight-bold text-dark my-2">Subject Detail</h3>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-4">
+                    Subject
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class="col-sm-4">
+                    Description
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+            <a asp-action="Index" class="btn btn-sm btn-warning float-left">Go Back</a>
+        </div>
+    </div>
+</div>

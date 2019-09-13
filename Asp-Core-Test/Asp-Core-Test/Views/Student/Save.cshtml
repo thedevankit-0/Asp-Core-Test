@@ -1,0 +1,76 @@
+﻿@model Asp_Core_Test.Models.Student
+
+@using  Asp_Core_Test.Models
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* Add/Edit the New Student Details *@
+<ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a asp-action="Index">Home</a></li>
+    <li class="breadcrumb-item active">Save Student Details</li>
+</ol>
+
+<div class="card border-primary">
+    <div class="col-md-6 card-body offset-3">
+        <div class="form-horizontal">
+            <h3 class="text-center font-weight-bold text-primary my-2">Save Student Detail</h3>
+            <hr />
+            <form asp-action="Save" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">First Name</label>
+                    <input asp-for="@Model.FirstName" class="form-control" maxlength="50" />
+                    <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Last Name</label>
+                    <input asp-for="@Model.LastName" class="form-control" maxlength="50" />
+                    <span asp-validation-for="@Model.LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input asp-for="@Model.Email" class="form-control" maxlength="50" />
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Address</label>
+                    <input asp-for="@Model.Address" class="form-control" maxlength="50" />
+                    <span asp-validation-for="@Model.Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Contact</label>
+                    <input asp-for="@Model.Contact" class="form-control" maxlength="10" />
+                    <span asp-validation-for="@Model.Contact" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Gender</label>
+                    <div class="px-3">
+                        <input asp-for="@Model.Gender" type="radio" value="m" /> Male <br>
+                        <input asp-for="@Model.Gender" type="radio" value="f" />Female
+                    </div>
+                    <span asp-validation-for="@Model.Gender" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Education Year</label>
+                    <select asp-for="Year" class="form-control" asp-items="Html.GetEnumSelectList<YearOfGraduation>()">
+                        <option selected="selected" value="" disabled>Please select</option>
+                    </select>
+                    <span asp-validation-for="Year" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Subject</label>
+                    <select asp-for="@Model.PhdSubjectId" class="form-control" asp-items="ViewBag.PhdSubjectId">
+                        <option selected="selected" value="" disabled>Please select</option>
+                    </select>
+                    <span asp-validation-for="@Model.PhdSubjectId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary float-right" />
+                    <a asp-action="Index" class="btn btn-warning float-left">Go Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
