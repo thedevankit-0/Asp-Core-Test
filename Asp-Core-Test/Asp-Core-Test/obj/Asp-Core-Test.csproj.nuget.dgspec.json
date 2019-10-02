@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj": {}
+    "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done - Copy\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj": {}
   },
   "projects": {
-    "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj": {
+    "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done - Copy\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj",
+        "projectUniqueName": "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done - Copy\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj",
         "projectName": "Asp-Core-Test",
-        "projectPath": "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj",
+        "projectPath": "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done - Copy\\Asp-Core-Test\\Asp-Core-Test\\Asp-Core-Test.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\obj\\",
+        "outputPath": "D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done - Copy\\Asp-Core-Test\\Asp-Core-Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -84,10 +84,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -63,3 +63,38 @@ D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\o
 D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.pdb
 D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.csproj.CopyComplete
 D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Student\QRCode.g.cshtml.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Asp-Core-Test.deps.json
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Asp-Core-Test.runtimeconfig.json
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Asp-Core-Test.runtimeconfig.dev.json
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Asp-Core-Test.dll
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Asp-Core-Test.pdb
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Asp-Core-Test.Views.dll
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Asp-Core-Test.Views.pdb
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.csprojAssemblyReference.cache
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.RazorAssemblyInfo.cache
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.RazorAssemblyInfo.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.AssemblyInfoInputs.cache
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.AssemblyInfo.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.TagHelpers.input.cache
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.TagHelpers.output.cache
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.RazorCoreGenerate.cache
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.RazorTargetAssemblyInfo.cache
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.RazorTargetAssemblyInfo.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.Views.pdb
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.dll
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.pdb
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.csproj.CopyComplete
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Student\Delete.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Student\Details.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Student\Index.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Student\QRCode.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Subject\Delete.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Subject\Details.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Subject\Index.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Subject\Save.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done - Copy\Asp-Core-Test\Asp-Core-Test\bin\Debug\netcoreapp2.2\wwwroot\images\qrcode.png

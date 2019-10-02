@@ -117,7 +117,7 @@ namespace Asp_Core_Test.Controllers
             Bitmap qrCodeImage = qrCode.GetGraphic(20);
 
             // Save generated QR image file.
-            qrCodeImage.Save("D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\wwwroot\\images\\qrcode.png");
+            qrCodeImage.Save("D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done - Copy\\Asp-Core-Test\\Asp-Core-Test\\wwwroot\\images\\qrcode.png");
 
             return View(studentDetails);
         }
@@ -153,7 +153,7 @@ namespace Asp_Core_Test.Controllers
             gfx.DrawString("Subject Id : " + studentDetails.PhdSubjectId, fontBold, XBrushes.Black, 200, 215);
             gfx.DrawString("Subject Name : " + studentDetails.phdSubject.Name, fontBold, XBrushes.Black, 200, 240);
 
-            XImage image = XImage.FromFile("D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\wwwroot\\images\\qrcode.png");
+            XImage image = XImage.FromFile("D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done - Copy\\Asp-Core-Test\\Asp-Core-Test\\wwwroot\\images\\qrcode.png");
             gfx.DrawImage(image, 20, 120, 150, 150);
 
             const string filename = "UserIdentityCard.pdf";
