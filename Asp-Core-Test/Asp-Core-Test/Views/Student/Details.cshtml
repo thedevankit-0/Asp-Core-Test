@@ -35,18 +35,6 @@
                 <dd class="col-sm-8">
                     @Html.DisplayFor(model => model.Email)
                 </dd>
-                <dt class="col-sm-4">
-                    Address
-                </dt>
-                <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.Address)
-                </dd>
-                <dt class="col-sm-4">
-                    Contact
-                </dt>
-                <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.Contact)
-                </dd>
                 @if (Model.Gender == "m")
                 {
                     <dt class="col-sm-4">
@@ -65,18 +53,6 @@
                         Female
                     </dd>
                 }
-                <dt class="col-sm-4">
-                    Education Year
-                </dt>
-                <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.Year)
-                </dd>
-                <dt class="col-sm-4">
-                    Phd Subject
-                </dt>
-                <dd class="col-sm-8">
-                    @Html.DisplayFor(model => model.phdSubject.Name)
-                </dd>
             </dl>
             <a asp-action="Index" class="btn btn-sm btn-warning float-left">Go Back</a>
             <a asp-controller="Student" asp-action="QRCode" asp-route-id="@Model.Id" class="btn btn-sm float-right btn-primary">View Student Card</a>

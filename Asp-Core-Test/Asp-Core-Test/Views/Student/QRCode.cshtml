@@ -86,12 +86,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="text-center col-md-6 offset-3">
+                <div class="mx-3 col-md-4 float-left">
+                    <a asp-action="Index" class="btn btn-sm btn-warning float-left">Go Back</a>
+                </div>
+                <div class="text-center col-md-6 float-right mx-3">
                     <a asp-controller="Student" asp-action="ExportToPDF" asp-route-id="@Model.Id" class="btn btn-block float-right btn-primary">Download Pdf</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@*<a asp-controller="Student" asp-action="" class="btn btn-sm float-right btn-primary"></a>*@
-@*window.open('/{ControllerName}/GetReport, "_blank");*@
